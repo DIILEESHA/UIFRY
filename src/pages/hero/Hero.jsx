@@ -4,8 +4,12 @@ import Marquee from "react-fast-marquee";
 import { motion } from "framer-motion";
 
 const textVariants = {
-  hidden: { opacity: 0, y: 50 },
-  visible: { opacity: 1, y: 0, transition: { duration: 2 } },
+  hidden: { opacity: 0, y: 50, transition: { type: "spring", stiffness: 10 } },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: { type: "spring", stiffness: 40, duration: 5 },
+  },
 };
 
 const Hero = () => {
@@ -60,10 +64,15 @@ const Hero = () => {
           >
             Seamless solution with our magic!
           </motion.h1>
-          <p className="sm_para">
+          <motion.p
+            className="sm_para"
+            initial="hidden"
+            animate="visible"
+            variants={textVariants}
+          >
             UIFry is the project management platform that aims for teams to
             achieve an efficient dream management
-          </p>
+          </motion.p>
 
           <div className="demo_view">
             <div className="demo_viewer">
