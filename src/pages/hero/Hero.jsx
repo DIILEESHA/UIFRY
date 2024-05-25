@@ -1,6 +1,12 @@
 import "./hero.css";
 import CountUp from "react-countup";
 import Marquee from "react-fast-marquee";
+import { motion } from "framer-motion";
+
+const textVariants = {
+  hidden: { opacity: 0, y: 50 },
+  visible: { opacity: 1, y: 0, transition: { duration: 2 } },
+};
 
 const Hero = () => {
   return (
@@ -30,7 +36,12 @@ const Hero = () => {
         </div>
         <div className="hero_sub_container one">
           <div className="hero_top_view">
-            <img className="top_img" src="https://i.imgur.com/xcVydSK.png" alt="" loading="lazy" />
+            <img
+              className="top_img"
+              src="https://i.imgur.com/xcVydSK.png"
+              alt=""
+              loading="lazy"
+            />
 
             <h2 className="view_text">
               Based on
@@ -41,7 +52,14 @@ const Hero = () => {
               reviews
             </h2>
           </div>
-          <h1 className="view_lg_text">Seamless solution with our magic!</h1>
+          <motion.h1
+            className="view_lg_text"
+            initial="hidden"
+            animate="visible"
+            variants={textVariants}
+          >
+            Seamless solution with our magic!
+          </motion.h1>
           <p className="sm_para">
             UIFry is the project management platform that aims for teams to
             achieve an efficient dream management
@@ -54,9 +72,9 @@ const Hero = () => {
                 Start work efficiently with UIFry SaaS product
               </p>
             </div>
-              <div className="demo_btn">
-                <button>get a free demo</button>
-              </div>
+            <div className="demo_btn">
+              <button>get a free demo</button>
+            </div>
           </div>
 
           <div className="bootm_img">
@@ -64,7 +82,11 @@ const Hero = () => {
           </div>
         </div>
         <div className="hero_sub_container two">
-          <img className="right_img" src="https://i.imgur.com/sMEslLM.png" alt="" />
+          <img
+            className="right_img"
+            src="https://i.imgur.com/sMEslLM.png"
+            alt=""
+          />
         </div>
       </div>
     </div>

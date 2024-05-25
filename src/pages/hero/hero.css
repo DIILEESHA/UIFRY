@@ -12,7 +12,7 @@
   align-items: center;
   justify-content: center;
   background-color: #000;
-  color: #fff;
+  color: #8f8b8b;
   transform: rotate(0deg);
   z-index: -1;
 }
@@ -99,7 +99,7 @@
   width: 100%;
   font-size: 65px;
   font-weight: bold;
-  margin: 25px 0;
+  margin: 20px 0;
   line-height: 100%;
 }
 

@@ -98,7 +98,7 @@ const Navbar = () => {
         </div>
         <div className="sm_mobile_divider">
           <div className="clode_btn">
-          <button className="nav_toggler" onClick={toggleMobileNav}>
+            <button className="nav_toggler" onClick={toggleMobileNav}>
               <img src="https://i.imgur.com/0IFUXSO.png" alt="" />
             </button>
           </div>
