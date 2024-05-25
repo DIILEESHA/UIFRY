@@ -97,6 +97,18 @@ const Hero = () => {
             alt=""
           />
         </div>
+        <div className="copied">
+          <h2 className="copyright">
+            Developed & Designed by :
+            <a
+              href="https://dileeshanawarathna.me"
+              target="_blank"
+      
+            >
+              @Dileesha✨
+            </a>
+          </h2>
+        </div>
       </div>
     </div>
   );
