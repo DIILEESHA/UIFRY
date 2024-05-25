@@ -12,7 +12,7 @@ const Hero = () => {
         <div className="transformer">
           <Marquee
             gradient={true}
-            gradientWidth={10}
+            gradientWidth={300}
             gradientColor="#000"
             speed={30} // Adjust speed as needed
             direction="left" // Direction of the marquee
