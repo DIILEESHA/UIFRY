@@ -17,7 +17,7 @@ const Hero = () => {
     <div className="hero_main">
       <div className="hero_container">
         <div className="hero_img">
-          <img src="https://i.imgur.com/wr82owh.png" alt="Hero" />
+          <img src="https://i.imgur.com/3FctZ5b.png" alt="Hero" />
         </div>
         <div className="transformer">
           <Marquee
